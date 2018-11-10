@@ -20,6 +20,10 @@ function Rectangle(height, width){
     this.width = width;
 }
 
+// TODO: Change the method name to something simpler like: Perimeter or getPerimeter
+// because afterwards when you need to use it on a property it looks bad like so: 
+// rectangle1.RectanglePerimeter(), while rect1.getPerimeter() is much cleaner
+
 Rectangle.prototype.RectanglePerimeter = function(){
     return ` ${2 * (this.height + this.width)}`
 }
